@@ -1,5 +1,28 @@
 <!doctype html>
+<html lang="en">
+<head>
 <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Trip Planner</title>
-<meta http-equiv="refresh" content="0; url=surabaya/">
-<p><a href="surabaya/">Surabaya &amp; East Java, 12–16 Dec</a></p>
+<style>
+:root{color-scheme:light;--ground:#ECEFEA;--panel:#F7F8F5;--ink:#17201C;--soft:#4A5550;--rule:#C9D0CA;--moss:#2E6A55}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){color-scheme:dark;--ground:#111714;--panel:#18201C;--ink:#E3EAE5;--soft:#A3AEA8;--rule:#2E3833;--moss:#7DC0A4}}
+:root[data-theme="dark"]{color-scheme:dark;--ground:#111714;--panel:#18201C;--ink:#E3EAE5;--soft:#A3AEA8;--rule:#2E3833;--moss:#7DC0A4}
+*{box-sizing:border-box}
+body{margin:0;background:var(--ground);color:var(--ink);font:17px/1.5 Georgia,serif;padding:48px 16px}
+main{max-width:640px;margin:0 auto;display:flex;flex-direction:column;gap:14px}
+h1{font:900 clamp(36px,8vw,56px)/1 "Arial Narrow",system-ui,sans-serif;text-transform:uppercase;margin:0 0 12px}
+a.trip{display:block;background:var(--panel);border:1px solid var(--rule);padding:16px 18px;color:var(--ink);text-decoration:none}
+a.trip:hover{border-color:var(--moss)}
+a.trip b{display:block;font:700 22px/1.2 "Arial Narrow",system-ui,sans-serif;color:var(--moss)}
+a.trip span{color:var(--soft);font-size:15px}
+</style>
+</head>
+<body>
+<main>
+  <h1>Trip Planner</h1>
+  <a class="trip" href="surabaya/"><b>East Java Loop →</b><span>Surabaya, Penanggungan, Tumpak Sewu, Bromo · 12–16 Dec 2026</span></a>
+  <a class="trip" href="bali/"><b>Quiet Bali Loop →</b><span>Munduk, Sekumpul, Amed, Sidemen · 12–16 Dec 2026</span></a>
+</main>
+</body>
+</html>
