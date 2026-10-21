@@ -149,6 +149,17 @@ tr.total td,tr.total th{border-top:2px solid var(--ink);font-weight:600}
 .check{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:8px 24px}
 .check li{display:flex;gap:10px;align-items:flex-start}
 .check input{margin-top:6px;accent-color:var(--moss);width:16px;height:16px;flex:none}
+/* Photos */
+figure{margin:0}
+.credit{font-family:var(--mono);font-size:11px;color:var(--ink-soft)}
+.credit a{color:inherit}
+.hero{margin-top:24px;border:1px solid var(--ink);background:var(--panel)}
+.hero img{display:block;width:100%;height:auto;aspect-ratio:21/9;object-fit:cover}
+.hero figcaption{display:flex;flex-wrap:wrap;justify-content:space-between;gap:4px 16px;padding:8px 12px}
+.day-photo{margin:-18px -20px 0}
+.day-photo img{display:block;width:100%;height:auto;aspect-ratio:16/7;object-fit:cover}
+.day-photo figcaption{padding:6px 20px 0}
+@media (max-width:700px){.hero img{aspect-ratio:4/3}.day-photo img{aspect-ratio:3/2}}
 footer{margin-top:48px;padding-top:16px;border-top:1px solid var(--rule)}
 @media (prefers-reduced-motion:no-preference){.chip,.stay-card{transition:border-color .15s,background .15s}}
 </style>
@@ -159,6 +170,10 @@ footer{margin-top:48px;padding-top:16px;border-top:1px solid var(--rule)}
 <header>
   <p class="eyebrow">Surabaya · Mojokerto · Malang · Lumajang · Probolinggo</p>
   <h1 class="title">East Java <span>Loop</span></h1>
+  <figure class="hero">
+    <img src="img/bromo-sunrise.jpg" width="1600" height="1066" alt="Sunrise over the Tengger caldera: Bromo smoking in front, Batok's ridged cone beside it, Semeru behind">
+    <figcaption><span class="mono">Day 4 · sunrise over Bromo, Batok and Semeru</span><span class="credit">Photo: Thomas Fuhrmann, <a href="https://commons.wikimedia.org/wiki/File:Gunung_Bromo_sunrise_-_Indonesia.jpg" target="_blank" rel="noopener">CC BY-SA 4.0</a></span></figcaption>
+  </figure>
   <p class="lede">Five days out of Surabaya for three people. Each day is built around a hike, a canyon or a hot spring, with a local food stop or two between. The route is a loop: temple ruins and a sunrise summit first, then a canyon under a waterfall, then the Bromo caldera on foot, and back to the city to finish.</p>
   <div class="facts">
     <div><span class="eyebrow">Dates</span><b>Sat 12 – Wed 16 Dec</b></div>
@@ -214,6 +229,7 @@ footer{margin-top:48px;padding-top:16px;border-top:1px solid var(--rule)}
     <article class="day">
       <div class="day-tag"><span class="w">Sat</span><span class="d">12 Dec</span><span class="w">Day 1</span></div>
       <div class="day-body">
+        <figure class="day-photo"><img src="img/jolotundo.jpg" width="1200" height="800" loading="lazy" alt="Candi Jolotundo: a stone bathing temple with spring-fed spouts, set into a green terraced hillside"><figcaption class="credit">Photo: Ivuvisual, <a href="https://commons.wikimedia.org/wiki/File:Candi_Jolotundo.jpg" target="_blank" rel="noopener">CC BY-SA 4.0</a></figcaption></figure>
         <div><h3>Land, eat, head for the hills</h3><p class="sub">Surabaya → Trawas, 55 km. Stay at the foot of Mt Penanggungan.</p></div>
         <div class="tags"><span class="tag city">Surabaya food</span><span class="tag">Ancient temple</span><span class="tag">Hot spring</span></div>
         <ol class="tl">
@@ -228,6 +244,7 @@ footer{margin-top:48px;padding-top:16px;border-top:1px solid var(--rule)}
     <article class="day">
       <div class="day-tag"><span class="w">Sun</span><span class="d">13 Dec</span><span class="w">Day 2</span></div>
       <div class="day-body">
+        <figure class="day-photo"><img src="img/penanggungan.jpg" width="1200" height="795" loading="lazy" alt="A hiker on the Penanggungan summit looking out over morning haze to the volcanoes beyond"><figcaption class="credit">Photo: DJekky, <a href="https://commons.wikimedia.org/wiki/File:Puncak_Penanggungan.jpg" target="_blank" rel="noopener">CC BY-SA 4.0</a></figcaption></figure>
         <div><h3>Sunrise on a temple mountain</h3><p class="sub">Mt Penanggungan, 1,653 m. About 1,000 m of climbing, then over to Malang.</p></div>
         <div class="tags"><span class="tag">Night hike</span><span class="tag">Majapahit ruins</span><span class="tag">Hot spring</span><span class="tag city">Malang heritage</span></div>
         <ol class="tl">
@@ -245,6 +262,7 @@ footer{margin-top:48px;padding-top:16px;border-top:1px solid var(--rule)}
     <article class="day">
       <div class="day-tag"><span class="w">Mon</span><span class="d">14 Dec</span><span class="w">Day 3</span></div>
       <div class="day-body">
+        <figure class="day-photo"><img src="img/tumpak-sewu.jpg" width="1200" height="900" loading="lazy" alt="Tumpak Sewu: dozens of waterfalls pouring down a curved, jungle-covered cliff, with Semeru in the distance"><figcaption class="credit">Photo: Muhyiddin, <a href="https://commons.wikimedia.org/wiki/File:Tumpak_sewu_waterfall.jpg" target="_blank" rel="noopener">CC BY-SA 4.0</a></figcaption></figure>
         <div><h3>Down into the canyon</h3><p class="sub">Tumpak Sewu, a 120 m semicircle of falls, then north to the Bromo rim.</p></div>
         <div class="tags"><span class="tag">Canyon</span><span class="tag">River walk</span><span class="tag">Cave</span></div>
         <ol class="tl">
@@ -263,6 +281,7 @@ footer{margin-top:48px;padding-top:16px;border-top:1px solid var(--rule)}
     <article class="day">
       <div class="day-tag"><span class="w">Tue</span><span class="d">15 Dec</span><span class="w">Day 4</span></div>
       <div class="day-body">
+        <figure class="day-photo"><img src="img/sand-sea.jpg" width="1200" height="800" loading="lazy" alt="Walkers crossing the flat sand sea toward Bromo's crater as a white plume rises from it"><figcaption class="credit">Photo: Jakub Hałun, <a href="https://commons.wikimedia.org/wiki/File:Bromo,_Java,_Indonesia,_20220820_0636_9502.jpg" target="_blank" rel="noopener">CC BY-SA 4.0</a></figcaption></figure>
         <div><h3>Walk the sand sea</h3><p class="sub">Bromo on a weekday, which means cheaper tickets and fewer people. Back to Surabaya by evening.</p></div>
         <div class="tags"><span class="tag">Sunrise</span><span class="tag">Caldera walk</span><span class="tag">Slot gorge</span><span class="tag city">Night food street</span></div>
         <ol class="tl">
@@ -281,6 +300,7 @@ footer{margin-top:48px;padding-top:16px;border-top:1px solid var(--rule)}
     <article class="day">
       <div class="day-tag"><span class="w">Wed</span><span class="d">16 Dec</span><span class="w">Day 5</span></div>
       <div class="day-body">
+        <figure class="day-photo"><img src="img/sampoerna.jpg" width="1200" height="800" loading="lazy" alt="The columned 19th-century façade of the House of Sampoerna in Surabaya"><figcaption class="credit">Photo: consigliere ivan, <a href="https://commons.wikimedia.org/wiki/File:House_of_Sampoerna_Mei_2015.jpg" target="_blank" rel="noopener">CC BY-SA 2.0</a></figcaption></figure>
         <div><h3>Old port city on foot</h3><p class="sub">Surabaya's north side. Use Grab or Gojek. No driver needed today.</p></div>
         <div class="tags"><span class="tag city">Heritage</span><span class="tag city">Markets</span><span class="tag city">Food</span></div>
         <ol class="tl">
